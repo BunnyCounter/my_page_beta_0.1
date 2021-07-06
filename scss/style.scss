@@ -11,7 +11,8 @@ body{
     font-size: 20px;
     background: url("../img/bg1.jpg") no-repeat;
     background-size: cover;
-}
+    background-attachment: fixed;
+    }
 //mix
 h1{
    font-weight: 700;
@@ -206,10 +207,13 @@ span.logo{
     }
 }
 .title {
+    font-size: 24px;
     margin: 10px;
     text-align: center;
 }
 .text {
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 

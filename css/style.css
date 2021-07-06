@@ -74,6 +74,7 @@ body {
   font-size: 20px;
   background: url("../img/bg1.jpg") no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -300,8 +301,14 @@ span.logo:hover {
 }
 
 .title {
+  font-size: 24px;
   margin: 10px;
   text-align: center;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .footer {
