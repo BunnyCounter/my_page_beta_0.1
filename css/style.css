@@ -273,18 +273,11 @@ span.logo:hover {
 }
 
 .footer {
-  border: 2px solid green;
+  background: #1F2041;
 }
 
-.footer__text {
-  font-size: 14px;
-}
-
-.footer__year {
-  font-size: 14px;
-}
-
-.container {
+.footer__body {
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,15 +285,20 @@ span.logo:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background: #1F2041;
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: lowercase;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  min-height: 60px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  word-spacing: 20px;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer__author {
+  text-transform: uppercase;
 }
