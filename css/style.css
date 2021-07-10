@@ -82,7 +82,7 @@ h1 {
 .wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 1300px;
+  max-width: 1300px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,13 +97,14 @@ h1 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
-  position: -webkit-sticky;
-  position: sticky;
   width: 100%;
   height: 62px;
 }
 
 .header__body {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,6 +177,7 @@ h1 {
 }
 
 .main {
+  position: relative;
   padding: 40px;
   max-width: 1180px;
   margin: 0 auto;
@@ -204,7 +206,7 @@ h1 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 500px;
+  min-height: 700px;
 }
 
 .intro__logo {
@@ -249,9 +251,8 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
   max-width: 880px;
-  margin: 0 auto;
+  margin: auto auto;
 }
 
 .intro__suptitle {
@@ -266,6 +267,7 @@ h1 {
   font-size: 80px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   line-height: 1.2;
 }
 
@@ -324,16 +326,19 @@ span.logo:hover {
 
 .title {
   font-size: 24px;
-  margin: 10px;
+  margin: 40px;
   text-align: center;
 }
 
 .text {
+  background-color: #1F2041;
+  opacity: 0.8;
+  color: #fff;
   padding: 20px;
   border: 4px solid #000;
   border-radius: 52px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .footer {
