@@ -6,7 +6,6 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
     background: url("../img/bg1.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -20,10 +19,13 @@ h1{
 // Оболочка
 .wrapper {
     box-sizing: border-box;
-    max-width: 1300px;
+    min-width: 20px;
+    min-height: 100%;
+    min-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 // весь вверх
@@ -43,7 +45,7 @@ h1{
     flex-direction: row;
     top: 0;
     left: 0;
-    height: 60px;
+    min-height: 60px;
     justify-content: space-around;
     align-items: center;
     padding: 5px 5px;
@@ -107,7 +109,7 @@ h1{
 
 .main {
     position: relative;
-    padding: 40px;
+    padding: 100px 40px;
     max-width: 1180px;
     margin: 0 auto;
     display: flex;
@@ -198,6 +200,7 @@ span.logo{
     }
 }
 .intro_subtitle {
+    text-align: center;
     margin: 20px 0;
     font-family: "Quicksand";
     font-size: 20px;
@@ -220,7 +223,9 @@ span.logo{
     }
 }
 .title {
-    font-size: 24px;
+    color: #1F2041;
+    font-size: 30px;
+    font-weight: 700;
     margin: 40px;
     text-align: center;
 }
@@ -239,14 +244,14 @@ span.logo{
 
 
 .footer {
-    
     background: #1F2041;
     &__body {
-        padding: 5px;
+        min-height: 82px;
+        //padding: 5px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        min-height: 60px;
+        //align-items: center;
+        //min-height: 60px;
         justify-content: space-around;
         word-spacing: 20px;
         text-transform: lowercase;
