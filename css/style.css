@@ -68,7 +68,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Обнуление*/
 body {
-  min-width: 570px;
   font-family: 'Montserrat', sans-serif;
   background: url("../img/bg1.jpg") no-repeat;
   background-size: cover;
@@ -76,7 +75,7 @@ body {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .wrapper {
