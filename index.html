@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/iconsfonts.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width">
     <title>my_page</title>
@@ -19,16 +20,16 @@
                         <h1 class="header__logo"><span class="firstpartlogo">Be</span><span
                                 class="lastpartlogo">Mi</span>
                         </h1>
-                    </div>
-                    <div class="header__burger">
-                        <span></span>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
                     </div>
                     <nav class="navigation">
-                        <a class="naigation__link" href="#">Blog</a>
-                        <a class="naigation__link" href="#">Work</a>
-                        <a class="naigation__link" href="#">Portfolio</a>
-                        <a class="naigation__link" href="#">Useful</a>
-                        <a class="naigation__link" href="#">Contacts</a>
+                        <a class="naigation__link" href="#blog">Blog</a>
+                        <a class="naigation__link" href="#work">Work</a>
+                        <a class="naigation__link" name="Portfolio" href="#portfolio">Portfolio</a>
+                        <a class="naigation__link" name="Useful" href="#useful">Useful</a>
+                        <a class="naigation__link" name="Contacts" href="#contacts">Contacts</a>
                     </nav>
                 </div>
             </div>
@@ -38,7 +39,9 @@
             <main class="main">
                 <div class="intro">
                     <div class="intro__logo">
-                        <img class="intro__image" src="img/brain-3.png" alt="#">
+                        <span>
+                            <img class="intro__image" src="img/brain-3.png" alt="#">
+                        </span>
                     </div>
                     <div class="intro__text">
                         <div class="intro__suptitle">
@@ -55,12 +58,14 @@
                     </div>
                 </div>
                 <div class="content">
-                    <div class="content__blog">
+                    <div class="content__info">
                         <div class="content__blog_title">
-                            <h3 class="content__blog_title title">Blog</h3>
+                            <a name="blog">
+                                <h3 class="content__blog_title title">Blog</h3>
+                            </a>
                         </div>
-                        <div class="content__text">
-                            <p class="content__text text">
+                        <div class="content__blog">
+                            <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eum dolor neque quibusdam
                                 doloremque animi ipsam nobis ut fuga quas amet obcaecati expedita, aliquid labore quis
                                 adipisci
@@ -102,54 +107,69 @@
                         </div>
                     </div>
                     <div class="content__work">
-                        <h3 class="content__work_title title">Work</h3>
-                        <p class="content__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                        <a name="work">
+                            <h3 class="content__work_title title">Work</h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
                             esse
                             blanditiis alias perferendis corporis veritatis beatae corrupti atque aliquam labore,
                             quibusdam,
                             praesentium repudiandae est cum hic totam illo consequuntur aut.</p>
                     </div>
                     <div class="content__portfolio">
-                        <h3 class="content__porfolio_title title">portfolio</h3>
-                        <p class="content__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo,
+                        <a name="portfolio">
+                            <h3 class="content__porfolio_title title">portfolio</h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo,
                             magnam
                             reprehenderit, quisquam tenetur vero praesentium impedit repellat qui delectus rerum
                             eveniet, in
                             ea ipsum quaerat ex deserunt. Quod, autem vero?</p>
                     </div>
                     <div class="content__useful">
-                        <h3 class="content__useful_title title">useful</h3>
-                        <p class="content__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
+                        <a name="useful">
+                            <h3 class="content__useful_title title">useful</h3>
+                        </a>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
                             est
                             in ea repellendus atque aliquid mollitia dicta eius repellat accusamus quo quasi suscipit
                             officiis, pariatur tempore ipsam dolorum inventore earum.</p>
                     </div>
                     <div class="content__contacts">
-                        <h3 class="content__contacts_title title">contacts</h3>
-                        <p class="content__text text">
-                        <ul class="conatct_list">
-                            <li>lorem</li>
-                            <li>lorem</li>
-                            <li>lorem</li>
-                        </ul>
-                        </p>
+                        <a name="contacts">
+                            <h3 class="content__contacts_title title">contacts</h3>
+                        </a>
+                        <div class="contact__list">
+                            <a href="https://www.instagram.com/mik_xand3r/">
+                                <div class="contact__inst">
+                                    <i class="fab fa-instagram-square"></i>
+                                    <span>mik_xand3r</span>
+                                </div>
+                            </a>
+                            <a href="https://vk.com/mik_xand3r">
+                                <div class="contact__vk">
+                                    <i class="fab fa-vk"></i>
+                                    <span> vk.com/mik_xand3r</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </main>
-            <footer class="footer">
-                <div class="footer__body">
-                    <div class="footer__text">
-                        <p>Made without foul language in three evenings</p>
-                    </div>
-                    <div class="footer__author">
-                        <p>Mikhail Belousov</p>
-                    </div>
-                    <div class="footer__year">
-                        <p>2021</p>
-                    </div>
-                </div>
-            </footer>
         </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__body">
+                <div class="footer__text">
+                    <p>Made without foul language in three evenings</p>
+                </div>
+                <div class="footer__author">
+                    <p>Mikhail Belousov</p>
+                </div>
+                <div class="footer__year">
+                    <p>2021</p>
+                </div>
+            </div>
+        </footer>
+    </div>
     </div>
     <script src="js/script.js"></script>
 </body>

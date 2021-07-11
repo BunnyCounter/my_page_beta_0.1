@@ -1,3 +1,7 @@
-Number.MAX_SAFE_INTEGER
-const pow = 10e3
-console.log(Math.pow(-2, 53) - 1)
+document.querySelector('.header__burger').addEventListener('click', () => {
+    document.querySelector('.navigation').classList.toggle('navigation__active');
+});
+
+document.querySelector('.header__burger').addEventListener('click', () => {
+    document.querySelector('.header__burger').classList.toggle('burger__active');
+});
